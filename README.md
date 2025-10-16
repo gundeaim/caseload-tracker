@@ -1,9 +1,9 @@
-Caseload Tracker
-Overview
+#Caseload Tracker
+**Overview**
 
 Caseload Tracker is a JavaFX-based desktop application developed to streamline the process of parsing, auditing, and analyzing Excel and CSV files. This tool is particularly beneficial for professionals handling large datasets, such as case managers, auditors, and data analysts, enabling them to efficiently manage and verify data integrity.
 
-Key Features
+**Key Features**
 
 File Parsing: Seamlessly imports data from Excel (.xlsx) and CSV files, accommodating various data structures.
 
@@ -15,7 +15,7 @@ Data Export: Allows users to export cleaned and audited data back into Excel or 
 
 Customizable Rules: Users can define specific validation rules tailored to their dataset requirements, enhancing the auditing process.
 
-Technical Highlights
+**Technical Highlights**
 
 Built with JavaFX: Utilizes JavaFX for a responsive and modern desktop application interface.
 
