@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx/17.0.1"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.controller.CaseloadController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <Button text="Load Excel Caseload" onAction="#handleSelectCaseloadSheet"/>
+    <Button fx:id="btnOpenBAWindow" text="Load Caseload Optimization CSV" onAction="#handleSelectSqlCsv" disable="true"/>
+    <Button text="Run CL vs SQL Audit" onAction="#handleRunSqlVsClAudit"/>
+
+
+
+    <Label fx:id="lblMessage" text="" wrapText="true"/>
+    <TextArea fx:id="txtErrors" editable="false" wrapText="true"/>
+
+
+    <TableView fx:id="tblAuditResults" prefHeight="400">
+        <columns>
+            <TableColumn fx:id="colBAName" prefWidth="150" text="BCBA Name"/>
+            <TableColumn fx:id="colBALocation" prefWidth="150" text="Location"/>
+            <TableColumn fx:id="colSpreadsheetHours" prefWidth="150" text="Spreadsheet Hours"/>
+            <TableColumn fx:id="colCalculatedHours" prefWidth="150" text="Calculated Hours"/>
+        </columns>
+    </TableView>
+</VBox>
